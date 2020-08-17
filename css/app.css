@@ -10,6 +10,7 @@ html{
     -webkit-animation-duration: 4s;
     animation-name: main;
     animation-duration: 4s;
+    width: 100%;
 }
 /*End Code*/
 /*Create and styling about Image*/
