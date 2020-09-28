@@ -1,0 +1,13 @@
+{
+    "css.validate": false,
+    "auto-rename-tag.activationOnLanguage": [
+    
+        "*"
+    ],
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "githubPullRequests.remotes": [
+        "origin",
+        "upstream",
+        "master"
+    ]
+}
