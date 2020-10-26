@@ -1,0 +1,80 @@
+html {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(7, 255, 223, 100) 0%,
+    rgba(167, 0, 255, 1) 43%,
+    rgba(0, 212, 255, 1) 90%
+  );
+  background-repeat: repeat;
+  animation-name: iop;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes iop {
+  0% {
+    background: rgba(7, 255, 223, 100);
+  }
+
+  43% {
+    background: rgba(167, 0, 255, 1);
+  }
+
+  90% {
+    background: rgba(0, 212, 255, 1);
+  }
+}
+
+h1 {
+  text-align: center;
+  font-weight: 100;
+  font-family: "Poppins", "Sans-Serif";
+  text-transform: uppercase;
+  color: #20b2aa;
+  cursor: pointer;
+  margin-top: 20%;
+  font-size: 60px;
+  animation-name: bright;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bright {
+  0% {
+    color: #020024;
+  }
+
+  15% {
+    color: #00ff80;
+  }
+
+  30% {
+    color: #ff750b;
+  }
+
+  45% {
+    color: #00ff9a;
+  }
+
+  60% {
+    color: #00a8ff;
+  }
+
+  75% {
+    color: #ffb300;
+  }
+
+  90% {
+    color: #229a8d;
+  }
+
+  100% {
+    color: #00d4ff;
+  }
+}
+
+audio {
+  background: #f9f9f9;
+  box-shadow: #00a8ff;
+}
