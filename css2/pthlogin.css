@@ -3,78 +3,28 @@
 
 /*Create all setting with bgcolor*/
 body {
+    background: url(../img/forest.jpg);
     font-size: 16px;
     color: #404040;
     font-family: 'Poppins', 'Sans-Serif';
     background-position: center;
-    background-attachment: fixed;
     margin: 0;
     padding: 2rem 0;
     display: grid;
     place-items: center;
-    box-sizing: border-box;
-    animation-name: bgcolor;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-/*Setting KeyFrames Setting Color*/
-@keyframes bgcolor {
-    0% {
-        background: #ff9eaa;
-    }
-
-    10% {
-        background: #e860ff;
-    }
-
-    20% {
-        background: #41dbc7;
-    }
-
-    30% {
-        background: #2cc4e6;
-    }
-
-    40% {
-        background: #9a15e0;
-    }
-
-    50% {
-        background: #baee4c;
-    }
-
-    60% {
-        background: #eea84c;
-    }
-
-    70% {
-        background: #5fee4c;
-    }
-
-    80% {
-        background: #4ceed6;
-    }
-
-    90% {
-        background: #e94cee;
-    }
-
-    100% {
-        background: #4ce8ee;
-    }
-}
-
-/*End KeyFrames Setting*/
 /*End Code*/
 .card {
-    background-color: #fff;
-    max-width: 360px;
+    background-color: #2b7173;
+    max-width: 340px;
+    max-height: 600px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     border-radius: 2rem;
-    box-shadow: 0px 1rem 1.5rem rgba(0, 0, 0, 0.5);
 }
 
 .card .banner {
@@ -152,9 +102,11 @@ body {
 }
 
 .card label.name {
-    text-align: cenhter;
+    text-align: left;
     padding: 0 2rem 0.5rem;
     margin: 0; 
+    font-family: 'Poppins','Sans-Serif';
+    color: #f9f9f9;
 }
 
 .card input {
@@ -222,8 +174,9 @@ body {
 }
 
 .card .actions .Subscribe-btn button {
+    font-family: 'Poppins','Sans-Serif';
     cursor: pointer;
-    color: inherit;
+    color: #f9f9f9;
     font: inherit;
     font-weight: bold;
     background-color: #07ffdf;
@@ -252,6 +205,8 @@ body {
     text-align: justify;
     padding: 0 2rem 2.5rem;
     order: 100;
+    font-family: 'Poppins','Sans-Serif';
+    color: #f9f9f9;
 }
 .card .desc a{
     text-decoration: none;
@@ -260,6 +215,12 @@ body {
 }
 .card .desc a:hover{
     color: #90ee90;
+}
+@media screen and (max-width: 768px){
+    .card {
+        max-height: 600px;
+
+    }
 }
 /*End Code*/
 
@@ -286,7 +247,6 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
 }
-
 /* Modal Content */
 .popup {
     position: relative;
@@ -308,7 +268,6 @@ body {
     font-family: "Poppins", "Sans-Serif";
     text-align: center;
 }
-
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {
@@ -370,5 +329,4 @@ body {
     border-radius: 20px;
 }
 
-/*End Code*/
 /*End Code*/
