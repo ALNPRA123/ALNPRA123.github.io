@@ -1,0 +1,59 @@
+/*Create All Path in This Path HTML*/
+*{
+  padding: 10px;
+}
+/*End Code*/
+/*Create Caption in this path with image*/
+.lk h1{
+  padding: 25px;
+  text-align: center;
+  font-family: 'Poppins','Sans-Serif';
+  font-size: 30px;
+  box-shadow: 0 6px 10px rgba(0,0,0,.28),0 0 6px rgba(0,0,0,.25);
+  background:#fff;
+  border-radius: 15px;
+}
+/*End Code*/
+/*Create image inside caption in this path*/
+.lk img{
+  max-height: 90px;
+  top: -5px;
+  position: absolute;
+  left: 5px;
+}
+/*End Code*/
+/*Create Button of Hyperlink in this path*/
+.hg a{
+  text-decoration: none;
+  background-color: #20b2aa;
+  border-radius: 15px;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Poppins','Sans-Serif';
+  color: #f9f9f9;
+}
+/*End Code*/
+/*Create Content inside*/
+#section01 *{
+  background: #f9f9f9;
+}
+.content{
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.28),0 0 6px rgba(0,0,0,.32);
+  border-radius: 15px;
+}
+.content h2{
+  font-family: 'Poppins','Sans-Serif';
+  text-align: center;
+}
+.content img{
+  max-height: 110px;
+  float: center;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  border-radius: 25px;
+}
+.content p{
+  font-size: 20px;
+}
+/*End Code*/
