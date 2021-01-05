@@ -1,0 +1,55 @@
+/*Create All Path Setting Layout in This Path*/
+*{
+    padding: 10px;
+}
+/*End Code*/
+/*Create Setting Caption In This Path with inside Image*/
+.hu h1{
+    text-align: center;
+    font-family: 'Poppins','Sans-Serif';
+    font-size: 30px;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.28),0 0 6px rgba(0,0,0,.32);
+    border-radius: 15px;
+    padding: 15px;
+}
+.hu img{
+    position: absolute;
+    top: 95px;
+    right: 5px;
+    max-height: 90px;
+}
+/*End Code*/
+/*Create Hyperlink Button Home in This Path*/
+.ko a{
+    font-family: 'Poppins','Sans-Serif';
+    color: #f9f9f9;
+    text-decoration: none;
+    font-size: 30px;
+    background:#20b2aa;
+    border-radius: 15px;
+    padding: 20px;
+}
+/*End Code*/
+/*Create Content Inside This Path*/
+.io{
+    background: #f9f9f9;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.32),0 0 6px rgba(0,0,0,.35);
+    border-radius: 15px;
+}
+.io h2{
+    text-align: center;
+    font-family: 'Poppins','Sans-Serif';
+    font-size: 25px;
+}
+.io img{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    float: center;
+    max-height: 110px;
+    border-radius: 25px;
+}
+.io p{
+    font-size: 20px;
+}
+/*End Code*/
