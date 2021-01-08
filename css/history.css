@@ -1,0 +1,156 @@
+/*Setting All Pack*/
+body{
+   font-family: 'Poppins', sans-serif;
+   padding: 50px;
+ }
+/*End Code*/
+/*Create Effect Card All Class Card*/
+.card-1{
+   border-radius: 25px;
+   background: #fff;
+   box-shadow: 0 6px 10px rgba(0,0,0,.18), 0 0 6px rgba(0,0,0,.15);
+   transition: .5s transform cubic-bezier(.155,1.105,.295,1.12),.5s box-shadow,.5s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+   padding: 14px 100px 18px 36px;
+   cursor: pointer;
+} 
+.card-1:hover{
+   transform: scale(1.05);
+   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+   background-color: #20b2aa;
+}
+.card-2{
+   border-radius: 25px;
+   background: #fff;
+   box-shadow: 0 6px 10px rgba(0,0,0,.18), 0 0 6px rgba(0,0,0,.15);
+   transition: .5s transform cubic-bezier(.155,1.105,.295,1.12),.5s box-shadow,.5s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+   padding: 14px 80px 18px 36px;
+   cursor: pointer;
+}
+.card-2:hover{
+   transform: scale(1.05);
+   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+   background-color: #009fff;
+}
+.card-3{
+   border-radius: 25px;
+   background: #fff;
+   box-shadow: 0 6px 10px rgba(0,0,0,.18), 0 0 6px rgba(0,0,0,.15);
+   transition: .5s transform cubic-bezier(.155,1.105,.295,1.12),.5s box-shadow,.5s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+   padding: 14px 80px 18px 36px;
+   cursor: pointer;
+}
+.card-3:hover{
+   transform: scale(1.05);
+   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+   background-color: #3b853b;
+}
+/*End Code*/
+/*Create Title card*/
+ .card-1 h3{
+   font-weight: 600;
+   font-family: 'Poppins','Sans-Serif';
+ }
+/*End Code*/
+/*Create Setting Resize Image*/
+ .card-1.card-2.card-3 img{
+   position: absolute;
+   top: 20px;
+   right: 15px;
+   max-height: 120px;
+ }
+ .title img{
+   position: absolute;
+   top: 20px;
+   right: 15px;
+   max-height: 120px;
+ }
+/*End Code*/
+/*Path Setting Position Image to All Card in this Path*/ 
+.card-1{
+   background-image: url(../img/undraw_Problem_solving_re_4gq3.svg);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: 80px;
+}
+.card-2{
+   background-image: url(../img/word.png);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: 80px;
+}
+.card-3{
+   background-image: url(../img/Excel.png);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: 80px;
+}
+@media(max-width: 990px){
+   .card-1.card-2.card-3.title{
+   margin: 20px;
+   }
+}
+/*End Code*/
+/*Create Button Hyperlink Card*/
+#section1 .card-1 a{
+   outline: 0;
+   display: inline-block;
+   padding: 8px;
+   color: #f9f9f9;
+   background-color: #1c889a;
+   text-align: center;
+   cursor: pointer;
+   font-size: 18px;
+   text-decoration: none;
+   border-radius: 15px;
+}
+#section1 .card-2 a{
+   outline: 0;
+   display: inline-block;
+   padding: 8px;
+   color: #f9f9f9;
+   background-color: #1c889a;
+   text-align: center;
+   cursor: pointer;
+   font-size: 18px;
+   text-decoration: none;
+   border-radius: 15px;
+}
+#section1 .card-3 a{
+   outline: 0;
+   display: inline-block;
+   padding: 8px;
+   color: #f9f9f9;
+   background-color: #1c889a;
+   text-align: center;
+   cursor: pointer;
+   font-size: 18px;
+   text-decoration: none;
+   border-radius: 15px;
+}
+/*End Code*/
+/*Create Path Section Title*/
+.title{
+   border-radius: 25px;
+   background: #fff;
+   box-shadow: 0 6px 10px rgba(0,0,0,.20), 0 0 6px rgba(0,0,0,.20);
+   padding: 14px 80px 18px 36px;
+   text-align: center;
+   font-family: 'Poppins','Sans-Serif';
+}
+/*End Code*/
+/*Create BUtton Home in Path History*/
+.jm a{
+   outline: 0;
+   display: inline-block;
+   padding: 10px;
+   color: #f9f9f9;
+   background-color: #1c889a;
+   text-align: center;
+   cursor: pointer;
+   font-size: 28px;
+   text-decoration: none;
+   border-radius: 15px;
+   float: center;
+   margin-left: 50%;
+}
+/*End Code*/
