@@ -1,0 +1,1 @@
+window.alert("Hallo Selamat Datang di ALNPRA.com");
