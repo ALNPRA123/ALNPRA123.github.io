@@ -1185,7 +1185,7 @@ body {
 
 #navbar.navbar .menu-icon {
   cursor: pointer;
-  display: inline-block;
+  display: block;
   float: right;
   padding: 28px 20px;
   position: relative;
