@@ -1,0 +1,148 @@
+/*Create Path All Font Setting*/
+*{
+  padding: 10px;
+}
+/*End Code*/
+/*Create Button Back Home in This Path*/
+.jik a{
+  outline: none;
+  display: inline-block;
+  text-align: center;
+  background-color: #00e8ff;
+  padding: 20px;
+  font-size: 30px;
+  font-family: 'Poppins','Sans-Serif';
+  color: #f9f9f9;
+  text-decoration: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+/*End Code*/
+/*Create Caption Title In This Path*/
+.htr h1{
+  padding: 25px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Poppins','Sans-Serif';
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.18), 0 0 6px rgba(0,0,0,.15);
+  border-radius: 15px;
+}
+.htr img{
+  max-height: 90px;
+  position: absolute;
+  top: -5px;
+  left: 5px;
+}
+/*End Code*/
+/*Create Path1*/
+.iyu {
+  background:#f9f9f9;
+  box-shadow: 0 6px 10px rgba(0,0,0,.18), 0 0 6px rgba(0,0,0,.15);
+  border-radius: 15px;
+}
+.iyu h2{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Poppins','Sans-Serif';
+}
+/*End Code*/
+/*Create Path2*/
+.iyh {
+  background:#f9f9f9;
+  box-shadow: 0 6px 10px rgba(0,0,0,.18), 0 0 6px rgba(0,0,0,.15);
+  border-radius: 15px;
+}
+.iyh h2{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Poppins','Sans-Serif';
+}
+/*End Code*/
+/*Create Path3*/
+.rti {
+  background:#f9f9f9;
+  box-shadow: 0 6px 10px rgba(0,0,0,.18), 0 0 6px rgba(0,0,0,.15);
+  border-radius: 15px;
+}
+.rti h2{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Poppins','Sans-Serif';
+}
+/*End Code*/
+/*Create Path4*/
+.klo {
+  background:#f9f9f9;
+  box-shadow: 0 6px 10px rgba(0,0,0,.18), 0 0 6px rgba(0,0,0,.15);
+  border-radius: 15px;
+}
+.klo h2{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Poppins','Sans-Serif';
+}
+/*End Code*/
+/*Create Path5*/
+.ipo {
+  background:#f9f9f9;
+  box-shadow: 0 6px 10px rgba(0,0,0,.18), 0 0 6px rgba(0,0,0,.15);
+  border-radius: 15px;
+}
+.ipo h2{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Poppins','Sans-Serif';
+}
+/*End Code*/
+/*Create Path6*/
+.okp {
+  background:#f9f9f9;
+  box-shadow: 0 6px 10px rgba(0,0,0,.18), 0 0 6px rgba(0,0,0,.15);
+  border-radius: 15px;
+}
+.okp h2{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Poppins','Sans-Serif';
+}
+/*End Code*/
+/*Create Path Refrensi*/
+.kgh {
+  background:#f9f9f9;
+  box-shadow: 0 6px 10px rgba(0,0,0,.18), 0 0 6px rgba(0,0,0,.15);
+  border-radius: 15px;
+}
+.kgh h1,h2{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Poppins','Sans-Serif';
+}
+/*Create Path Hyperlink Refrensi*/
+.kgh a{
+  outline: none;
+  margin-left: 15%;
+  font-size: 20px;
+  font-family: 'Poppins','Sans-Serif';
+  text-decoration: none;
+  color: #f9f9f9;
+  background: #256e59;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+/*End Code*/
+/*Create Path Copying Link Refrensi*/
+.kgh h3{
+  font-family: 'Poppins','Sans-Serif';
+  font-size: 24px;
+}
+.kgh p{
+  font-family: 'Poppins','Sans-Serif';
+}
+.kgh textarea{
+  width: 50%;
+}
+/*End Code*/
+/*End Code*/
+

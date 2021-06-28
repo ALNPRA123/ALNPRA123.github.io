@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+html{
+  background-image: url(../img/leaf.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+.profile img{
+  margin-right: auto;
+  margin-left: auto;
+  width: 210px;
+  display: block;
+  border-radius: 50%;
+}
+.caption h2{
+  text-align: center;
+  font-weight: 1000;
+  color: #ffffff;
+  font-family: 'Xanh Mono', monospace;
+  word-spacing: 0.5cm;
+}
+.name h1{
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+}
+.col-{
+  word-spacing: 1cm;
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+}
+.fa-linkedin-in{
+  text-decoration: none;
+  color: #ffffff;
+  background: #1c7083;
+  padding: 15px;
+  border-radius: 30% 10%;
+}
+.fa-youtube{
+  text-decoration: none;
+  padding: 15px;
+  color: #ffffff;
+  background: #f70f23;
+  border-radius: 35% 20%;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+    padding: none;
+    display: block;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background: rgb(58,177,180);
+  background: linear-gradient(90deg, rgba(58,177,180,1) 4%, rgba(69,252,247,1) 57%, rgba(29,195,253,1) 83%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  border-radius: 55% 15% 20% 20%;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  place-items: center;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 32px;
+  color: #147280;
+  display: block;
+  transition: 0.5s;
+  font-family: 'Poppins','Sans-Serif';
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #ffffff;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.btnio span,h4{
+  transform: rotateY(-90deg,-40deg) translateZ(-40%);
+  position: left top !important;
+  font-size: 25px;
+  font-family: 'Poppins','Sans-Serif';
+  font-weight: 100;
+  color: #f0f8ff;
+  cursor: pointer;
+  width: max-content;
+  height: max-content;
+  place-items: left !important;
+  border-radius: 140px/150px;
+  background: rgb(50,34,195);
+  background: linear-gradient(0deg, rgba(50,34,195,1) 50%, rgba(210,35,189,1) 100%);
+}
+.footer{
+  position: fixed !important;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2b7173;
+  color: #ffffff;
+  text-align: center;
+  padding: 0;
+}
+.hdrio {
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-align: center;
+  background-color: #1ea88f;
+  color: #ffffff;
+  width: 100%;
+}
+.hdrio a{
+  color: #0aff00;
+  text-decoration: none;
+}
+.hdrio a:hover{
+  color: #acff00;
+}
