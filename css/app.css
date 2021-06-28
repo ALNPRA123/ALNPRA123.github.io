@@ -94,7 +94,7 @@ html {
 #four.opiani p{
   text-align: center;
   position: absolute;
-  top: 68%;
+  top: 58%;
   left: 50%;
   font-weight: bold;
   font-size: 25px;
@@ -129,7 +129,7 @@ html {
 #section57 .vfgAnimated a {
   text-align: center;
   position: absolute;
-  top: 80%;
+  top: 65%;
   left: 50%;
   font-weight: bold;
   font-size: 32px;
@@ -165,7 +165,7 @@ html {
 /*Create Animation Bounce*/
 .arrow {
   position: absolute;
-  top: 90%;
+  top: 68%;
   left: 50%;
   margin-left: -20px;
   width: 40px;
