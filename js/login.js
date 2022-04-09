@@ -3,6 +3,7 @@
   var firebaseConfig = {
     apiKey: "AIzaSyCCBxd3Fgf9G1re0vUR8_TGqHh6exzx690",
     authDomain: "user-04-2022.firebaseapp.com",
+    databaseURL: "https://user-04-2022-default-rtdb.firebaseio.com",
     projectId: "user-04-2022",
     storageBucket: "user-04-2022.appspot.com",
     messagingSenderId: "945593956756",
