@@ -6,8 +6,8 @@
     projectId: "user-04-2022",
     storageBucket: "user-04-2022.appspot.com",
     messagingSenderId: "945593956756",
-    appId: "1:945593956756:web:08da56e8a60ac0f0c47781",
-    measurementId: "G-Z2NRBBG98E"
+    appId: "1:945593956756:web:4b8947d6405f9b38c47781",
+    measurementId: "G-1V7EYXJL0K"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
