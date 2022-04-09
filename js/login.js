@@ -1,24 +1,24 @@
 // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyCCBxd3Fgf9G1re0vUR8_TGqHh6exzx690",
-    authDomain: "user-04-2022.firebaseapp.com",
-    databaseURL: "https://user-04-2022-default-rtdb.firebaseio.com/names",
-    projectId: "user-04-2022",
-    storageBucket: "user-04-2022.appspot.com",
-    messagingSenderId: "945593956756",
-    appId: "1:945593956756:web:4b8947d6405f9b38c47781",
-    measurementId: "G-1V7EYXJL0K"
+  var firebaseConfig = {
+    apiKey: "AIzaSyC_39NzAnnktEpSUBnBVAm1YUQB7BP9qzw",
+    authDomain: "user-2021-juni.firebaseapp.com",
+    databaseURL: "https://user-2021-juni-default-rtdb.firebaseio.com",
+    projectId: "user-2021-juni",
+    storageBucket: "user-2021-juni.appspot.com",
+    messagingSenderId: "527266368773",
+    appId: "1:527266368773:web:41dab93a19ae215257bb6c",
+    measurementId: "G-9CT4YQSGDG"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  const app = firebase.database().ref('emails');
+  var firebaseRef = firebase.database().ref('emails');
   document.querySelector('#submitBtn').addEventListener('click', ()=>{
     const email = document.getElementById('email').value;
     firebaseRef.push(email);
   });
 
-  const firebaseRef = firebase.database().ref('names');
+  var firebaseRef = firebase.database().ref('names');
   document.querySelector('#submitBtn').addEventListener('click', ()=>{
     const name = document.getElementById('name').value;
     firebaseRef.push(name);
