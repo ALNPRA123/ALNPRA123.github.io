@@ -1,6 +1,6 @@
 // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
+  const firebaseConfig = {
     apiKey: "AIzaSyCCBxd3Fgf9G1re0vUR8_TGqHh6exzx690",
     authDomain: "user-04-2022.firebaseapp.com",
     databaseURL: "https://user-04-2022-default-rtdb.firebaseio.com",
@@ -12,13 +12,13 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  var firebaseRef = firebase.database().ref('emails');
+  const app = firebase.database().ref('emails');
   document.querySelector('#submitBtn').addEventListener('click', ()=>{
     const email = document.getElementById('email').value;
     firebaseRef.push(email);
   });
 
-  var firebaseRef = firebase.database().ref('names');
+  const firebaseRef = firebase.database().ref('names');
   document.querySelector('#submitBtn').addEventListener('click', ()=>{
     const name = document.getElementById('name').value;
     firebaseRef.push(name);
