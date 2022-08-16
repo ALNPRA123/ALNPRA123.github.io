@@ -159,6 +159,8 @@ html {
 
 #second {
   animation-delay: 2s;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 20px;
 }
 
 /*End Code*/
@@ -572,14 +574,15 @@ a {
 /*Creat Subscriber Count and Views Count WIth CSS3*/
 #section57 .subscribercount h4 {
   position: absolute;
-  bottom: 40px;
+  bottom: 300px;
   right: 20px;
   background-color: #ff0000;
   color: #f9f9f9;
   padding-left: 20px;
   padding-right: 20px;
   line-height: 40px 15px;
-  font-size: 25px;
+  font-size: 30px;
+  border-radius: 50px 10px;
 }
 
 /*Create Link Youtube*/
@@ -634,10 +637,38 @@ a {
     border-color: #f9f9f9;
   }
 }
+/*Adding Text for Animatoin countviews in API Youtube*/
+.countviews h4{
+  position: absolute;
+  bottom: 220px;
+  right: 10px;
+  background-color: black;
+  color: #f9f9f9;
+  padding-right: 20px ;
+  padding-left:10px ;
+  line-height : 40px 20px;
+  font-size: 25px;
+  overflow: hidden;
+  border-right: 0.15em solid #f9f9f9;
+  border-radius: 50px 10px;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: 2s ease-in-out 2ms reverse both running slideOut;
+
+}
+@keyframes slideOut {
+  from {
+    transform: translateY(65%);
+  }
+  to{
+    transform : translateY(150%);
+  }
+}
 
 #section57 .countviews p {
   position: absolute;
-  bottom: -34px;
+  bottom: 250px;
   right: 20px;
   background-color: #000000;
   color: #f9f9f9;
@@ -647,6 +678,7 @@ a {
   font-size: 25px;
   overflow: hidden;
   border-right: 0.15em solid #f9f9f9;
+  border-radius:50px 10px;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
