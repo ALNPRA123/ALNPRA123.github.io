@@ -42,13 +42,13 @@ html {
 #section57 .slideInAnimated {
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 24px;
   width: 100%;
   color: #f9f9f9;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @keyframes slideIn {
