@@ -574,14 +574,14 @@ a {
 /*Creat Subscriber Count and Views Count WIth CSS3*/
 #section57 .subscribercount h4 {
   position: absolute;
-  bottom: 300px;
-  right: 20px;
+  bottom: 180px;
+  right: 10px;
   background-color: #ff0000;
   color: #f9f9f9;
   padding-left: 20px;
   padding-right: 20px;
-  line-height: 40px 15px;
-  font-size: 30px;
+  line-height: 30px 5px;
+  font-size: 23px;
   border-radius: 50px 10px;
 }
 
@@ -640,14 +640,14 @@ a {
 /*Adding Text for Animatoin countviews in API Youtube*/
 .countviews h4{
   position: absolute;
-  bottom: 220px;
+  bottom: 160px;
   right: 10px;
   background-color: #000000;
   color: #f9f9f9;
   padding-right: 20px ;
   padding-left:10px ;
   line-height : 40px 20px;
-  font-size: 25px;
+  font-size: 23px;
   overflow: hidden;
   border-right: 0.15em solid #f9f9f9;
   border-radius: 50px 10px;
@@ -668,14 +668,14 @@ a {
 
 #section57 .countviews p {
   position: absolute;
-  bottom: 250px;
+  bottom: 100px;
   right: 20px;
   background-color: #000000;
   color: #f9f9f9;
   padding-left: 20px;
   padding-right: 10px;
   line-height: 40px 10px;
-  font-size: 25px;
+  font-size: 23px;
   overflow: hidden;
   border-right: 0.15em solid #f9f9f9;
   border-radius:50px 10px;
