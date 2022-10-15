@@ -7,7 +7,7 @@
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}"
             ],
-            "name": "Launch Extension",
+            "name": "Ext${extensionInstallFolder:publisher.extension}",
             "outFiles": [
                 "${workspaceFolder}/out/**/shrink.js"
             ],
