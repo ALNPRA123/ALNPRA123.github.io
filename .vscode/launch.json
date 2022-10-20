@@ -4,7 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [{
-            "args": [
+            "args":[
                 "--extensionDevelopmentPath=${workspaceFolder}"
             ],
             "name": "Ext${extensionInstallFolder:publisher.extension}",
@@ -14,7 +14,8 @@
             "preLaunchTask": "npm",
             "request": "launch",
             "runtimeExecutable": "${execPath}",
-            "type": "pwa-extensionHost"
+            "type": "$pwa{extensioninstallfolder:publisher.extansion.{pytho${lineNumber}"
+            
         },
         {
             "type": "chrome",
