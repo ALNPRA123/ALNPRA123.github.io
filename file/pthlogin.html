@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/For my website.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" type="text/css" href="../css2/pthlogin.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Yuk Gabung!</title>
-    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js"></script>
+
+
 </head>
 
 <body>
@@ -27,8 +26,8 @@
         <label class="name" for="email"><b>Email</b></label>
         <input type="text" placeholder="Your Email" id="email"><br>
         <div class="actions">
-            <form action="../file/pthlogin.html" class="Subscribe-btn">
-                <button type="submit" onClick="lrt()" id="submitBtn">Subscribe</button>
+            <form action="../file/pthlogin.html" class="Subscribe-btn"> 
+                <button type="submit" onclick="lrt()" id="submitBtn">Subscribe</button>
             </form>
         </div>
         <div class="desc">just subscribe and welcome to the ALNPRA book,already Subscribed and let's read(<a href="../index.html">homepage</a>)</div>
@@ -64,11 +63,41 @@
                 </h3>
             </div>
         </div>
-        <!--Javascript-->
-        <script src="../js/hdurl.js"></script>
-        <script type="text/javascript" src="../js/iop.js"></script>
-        <script type="text/javascript" src="../js/lrt.js"></script>
-        <script type="text/javascript" src="../js/login.js"></script>
+
+                <!--Javascript-->
+                <script src="../js/hdurl.js"></script>
+                <script type="text/javascript" src="../js/iop.js"></script>
+                <script type="text/javascript" src="../js/lrt.js"></script>
+
+                <script type="module">
+                    // Import the functions you need from the SDKs you need
+                    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+                    // TODO: Add SDKs for Firebase products that you want to use
+                    // https://firebase.google.com/docs/web/setup#available-libraries
+                  
+                    // Your web app's Firebase configuration
+                    const firebaseConfig = {
+                      apiKey: "AIzaSyCpKrNzeXOiE078KIHZujRxCjxm5brFV-g",
+                      authDomain: "db-22-ca218.firebaseapp.com",
+                      projectId: "db-22-ca218",
+                      storageBucket: "db-22-ca218.appspot.com",
+                      messagingSenderId: "724734461496",
+                      appId: "1:724734461496:web:114e9385baaa47eba748cd"
+                    };
+                  
+                    // Initialize Firebase
+                    const app = initializeApp(firebaseConfig);
+
+                    import {getDatabase, ref, set, child, update, remove}
+                    from "https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js";
+
+                    const db = getDatabase();
+
+                    //References//
+
+                    
+
+                  </script>
 </body>
 
 </html>
