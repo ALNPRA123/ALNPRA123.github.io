@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Testing</title>
+    <style>
+    label{display: inline-block; width: 80px0;}
+    input,select{width: 120px;}
+    </style>
+</head>
+<body>
+    
+    <label>Name</label> <input id="Namebox" type="text">
+    <label>RollNo</label> <input id="Rollbox" type="text">
+    <label>Section</label> <input id="Secbox" type="text">
+    <label>Gender</label>
+    <select id="Genbox">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+
+    <hr>
+    <button id="Insbtn">INSERT</button>
+    <button id="Selbtn">SELECT</button>
+    <button id="Updbtn">UPDATE</button>
+    <button id="Delbtn">DELETE</button>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCJn-UTp3KXDmcvsalROVjrQ4El9yCJeY0",
+          authDomain: "db-22-24.firebaseapp.com",
+          projectId: "db-22-24",
+          storageBucket: "db-22-24.appspot.com",
+          messagingSenderId: "832883594255",
+          appId: "1:832883594255:web:0cc38b2bbb59c378583f7a"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        import {getDatabase, ref, get, set, child, update, remove}
+        from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
+
+        const db = getDatabase();
+
+        //References//
+        var namebox = document.getElementById("Namebox");
+        var rollbox = document.getElementById("Rollbox");
+        var secbox = document.getElementById("Secbox");
+        var genbox = document.getElementById("Genbox");
+
+        var insbtn = document.getElementById("Insbtn");
+        var selBtn = document.getElementById("Selbtn");
+        var updBtn = document.getElementById("Updbtn");
+        var delBtn = document.getElementById("Delbtn");
+
+        //Insert Data Function//
+        function InsertData(){
+            set(ref(db, "TheStudents/"+ rollbox.value),{
+                NameOfStd : namebox.value,
+                RollNo : rollbox.value,
+                Section : secbox.value,
+                Gender: genbox.value
+            })
+            .then(()=>{
+                alert("data stored successfully");
+            })
+            .catch((error)=>{
+                alert("Unsuccessful, error"+error);
+            });
+        }
+
+
+        // Select Data Function //
+         function SelectData() {
+            const dbref = ref(db);
+
+            get(child(dbref,"TheStudents/"+ Rollbox.value)).then((snapshot)=>{
+                if(snapshot.exists()){
+                    Namebox.value = snapshot.val().NameOfStd;
+                    Secbox.value = snapshot.val().Section;
+                    Genbox.value = snapshot.val().Gender;
+                }
+
+                else{
+                    alert("No data found");
+                }
+            })
+            .catch((error)=>{
+                alert("Unsuccesful, error"+error);
+            });
+
+
+         }
+
+         // Update Data Function//
+         function UpdateData(){
+            update(ref(db, "TheStudents/"+ rollbox.value),{
+                NameOfStd : namebox.value,
+                Section : secbox.value,
+                Gender: genbox.value
+            })
+            .then(()=>{
+                alert("data updated successfully");
+            })
+            .catch((error)=>{
+                alert("Unsuccessful, error"+error);
+            });
+         }
+         // Delete Data Function//
+         function DeleteData(){
+            remove(ref(db, "TheStudents/"+ rollbox.value))
+            .then(()=>{
+                alert("data removed successfully");
+            })
+            .catch((error)=>{
+                alert("Unsuccessful, error"+error);
+            });
+         }
+
+
+        // Assign Events To Btns //
+        Insbtn.addEventListener('click', InsertData);
+        //Assign Events to Selbtn//
+        Selbtn.addEventListener('click', SelectData);
+        //Assign Events to Updbtn //
+        Updbtn.addEventListener('click', UpdateData);
+        //Assign Events to Delbtn//
+        Delbtn.addEventListener('click', DeleteData);
+      </script>
+
+
+</body>
+</html>
