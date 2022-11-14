@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crud Testing</title>
-    <style>
-    label{display: inline-block; width: 80px0;}
-    input,select{width: 120px;}
-    </style>
+    <link rel="stylesheet" type="text/css" href="../testing/db.css">
 </head>
 <body>
-    
-    <label>Name</label> <input id="Namebox" type="text">
-    <label>RollNo</label> <input id="Rollbox" type="text">
-    <label>Section</label> <input id="Secbox" type="text">
-    <label>Gender</label>
-    <select id="Genbox">
+    <div class="ltlogin">
+        <div class="banner">
+            <a href="https://www.instagram.com/aldi_nur_pratama/"><img title="instagram" viewbox="0 0 100 100" src="../img/logoalnpra2.png"></img></a>
+        </div>
+        <div class="menu">
+            <div class="opener" id="myBtn"><span></span><span></span><span></span></div>
+        </div>
+    <label class="name">Name</label> <input id="Namebox" type="text">
+    <label class="RollNo">RollNo</label> <input id="Rollbox" type="text">
+    <label class="Section">Section</label> <input id="Secbox" type="text">
+    <label class="Gender">Gender</label>
+    <select  id="Genbox">
         <option value="Male">Male</option>
         <option value="Female">Female</option>
     </select>
@@ -26,6 +29,39 @@
     <button id="Selbtn">SELECT</button>
     <button id="Updbtn">UPDATE</button>
     <button id="Delbtn">DELETE</button>
+
+    </div>
+
+    
+    <!-- The Modal -->
+    <div id="myModal" class="popupcontact">
+
+        <!-- Modal content -->
+        <div class="popup">
+            <div class="pop-header">
+                <span class="close">&times;</span>
+                <h2>Contact me if u have problem</h2>
+            </div>
+            <div class="pop-content">
+                <h2>If You Have Problem In This Website,u can message or contact my telegram and my whatsapp
+                    i hope can help u more,so that we can use this website with comfortable,
+                    warm greetings from admin ALNPRA and Enjoy Reading.
+                </h2>
+                <a href="https://wa.me/6281292493794?text=Ada%20Yang%20Bisa%20Saya%20Bantu%20?" style="text-decoration: none; background: none; 
+                          cursor: pointer;">
+                    <i class="fa fa-whatsapp" style="font-size:88px;color:#71ff5e; padding-left:14px;"></a></i>
+                    <a href="https://t.me/ALNPRA_bot" style="text-decoration: none; background: none; cursor: pointer;">
+                    <i class="fa fa-telegram" style="font-size:88px;color:#00ffda; padding-left: 16px;"></a></i>
+            </div>
+            <div class="pop-footer">
+                <h3>Or U can send an email at : <a href="mailto:aldinurpratama89@gmail.com" style="background: none; 
+            font-size: 1.2rem; 
+            color: #f9f9f9;
+            cursor: pointer; text-decoration: none;">aldinurpratama89@gmail.com</a><br>
+                    *Note : NoReply From Admin*
+                </h3>
+            </div>
+        </div>
 
     <script type="module">
         // Import the functions you need from the SDKs you need
