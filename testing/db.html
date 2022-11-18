@@ -21,10 +21,10 @@
     <label class="Gender">Gender</label> <input id="Genbox" type="text">
 
     <div class="actions01">
-    <button id="Insbtn">INSERT</button>
-    <button id="Selbtn">SELECT</button>
-    <button id="Updbtn">UPDATE</button>
-    <button id="Delbtn">DELETE</button>
+    <button type="submit" onClick="InsertData()" id="Insbtn">INSERT</button>
+    <button type="submit" onClick="SelectData()" id="Selbtn">SELECT</button>
+    <button type="submit" onClick="UpdateData()" id="Updbtn">UPDATE</button>
+    <button type="submit" onClick="DeleteData()" id="Delbtn">DELETE</button>
     </div>
 </div>
     
@@ -168,8 +168,12 @@
         Updbtn.addEventListener('click', UpdateData);
         //Assign Events to Delbtn//
         Delbtn.addEventListener('click', DeleteData);
+
+        window.history.pushState({urlPath:'/testing/db.html'},"",'/testing/db.html');
       </script>
 
-
+      <!--Javascript-->
+      <script type="text/javascript" src="../js/iop.js"></script>
+      <script type="text/javascript" src="../js/lrt.js"></script>
 </body>
 </html>
