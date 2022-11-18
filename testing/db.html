@@ -16,7 +16,7 @@
             <div class="opener" id="myBtn"><span></span><span></span><span></span></div>
         </div>
     <label class="name">Name</label> <input id="Namebox" type="text">
-    <label class="RollNo">RollNo</label> <input id="Rollbox" type="text">
+    <label class="Age">Age</label> <input id="Age" type="text">
     <label class="Section">Section</label> <input id="Secbox" type="text">
     <label class="Gender">Gender</label> <input id="Genbox" type="text">
 
@@ -86,7 +86,7 @@
 
         //References//
         var namebox = document.getElementById("Namebox");
-        var rollbox = document.getElementById("Rollbox");
+        var age = document.getElementById("Age");
         var secbox = document.getElementById("Secbox");
         var genbox = document.getElementById("Genbox");
 
@@ -97,9 +97,9 @@
 
         //Insert Data Function//
         function InsertData(){
-            set(ref(db, "TheStudents/"+ rollbox.value),{
+            set(ref(db, "TheStudents/"+ Age.value),{
                 NameOfStd : namebox.value,
-                RollNo : rollbox.value,
+                Age : Age.value,
                 Section : secbox.value,
                 Gender: genbox.value
             })
@@ -116,7 +116,7 @@
          function SelectData() {
             const dbref = ref(db);
 
-            get(child(dbref,"TheStudents/"+ Rollbox.value)).then((snapshot)=>{
+            get(child(dbref,"TheStudents/"+ Age.value)).then((snapshot)=>{
                 if(snapshot.exists()){
                     Namebox.value = snapshot.val().NameOfStd;
                     Secbox.value = snapshot.val().Section;
@@ -136,7 +136,7 @@
 
          // Update Data Function//
          function UpdateData(){
-            update(ref(db, "TheStudents/"+ rollbox.value),{
+            update(ref(db, "TheStudents/"+ Age.value),{
                 NameOfStd : namebox.value,
                 Section : secbox.value,
                 Gender: genbox.value
@@ -150,7 +150,7 @@
          }
          // Delete Data Function//
          function DeleteData(){
-            remove(ref(db, "TheStudents/"+ rollbox.value))
+            remove(ref(db, "TheStudents/"+ Age.value))
             .then(()=>{
                 alert("data removed successfully");
             })

@@ -1,12 +1,12 @@
 function InsertData() {
-  alert("Thank You For Subscribe");
+  alert("Please wait a few seconds Data is being processed");
 }
 function SelectData() {
-  alert("Thank You For Subscribe");
+  alert("Please wait a few seconds Data is being processed");
 }
 function UpdateData() {
-  alert("Thank You For Subscribe");
+  alert("Please wait a few seconds Data is being processed");
 }
 function DeleteData() {
-  alert("Thank You For Subscribe");
+  alert("Please wait a few seconds Data is being processed");
 }
