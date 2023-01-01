@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crud Testing</title>
-    <link rel="stylesheet" type="text/css" href="../testing/db.css">
+    <link rel="stylesheet" type="text/css" href="../17050809/db.css">
 </head>
 <body>
     <div class="ltlogin">
@@ -15,10 +15,10 @@
         <div class="menu">
             <div class="opener" id="myBtn"><span></span><span></span><span></span></div>
         </div>
-    <label class="name">Name</label><input id="Namebox" type="text">
+    <label class="name">Name</label> <input id="Name" type="text">
     <label class="Age">Age</label> <input id="Age" type="text">
-    <label class="Section">Section</label> <input id="Secbox" type="text">
-    <label class="Gender">Gender</label> <input id="Genbox" type="text">
+    <label class="Section">Section</label> <input id="Sec" type="text">
+    <label class="Gender">Gender</label> <input id="Gen" type="text">
 
     <div class="actions01">
     <button type="submit" onClick="InsertData()" id="Insbtn">INSERT</button>
@@ -61,34 +61,37 @@
         </div>
 
     <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+                // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
-      
+
         // Your web app's Firebase configuration
         const firebaseConfig = {
-          apiKey: "AIzaSyCJn-UTp3KXDmcvsalROVjrQ4El9yCJeY0",
-          authDomain: "db-22-24.firebaseapp.com",
-          projectId: "db-22-24",
-          storageBucket: "db-22-24.appspot.com",
-          messagingSenderId: "832883594255",
-          appId: "1:832883594255:web:0cc38b2bbb59c378583f7a"
+            apiKey: "AIzaSyBXd5QZWxWroDnWEcPuM8IVl0aXob0a7_8",
+            authDomain: "db-01-23.firebaseapp.com",
+            projectId: "db-01-23",
+            storageBucket: "db-01-23.appspot.com",
+            messagingSenderId: "56883491599",
+            appId: "1:56883491599:web:a2b60a228de411e8e2847a"
         };
-      
+
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
-
         import {getDatabase, ref, get, set, child, update, remove}
-        from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
+        from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+
+        //Database should always to setting in firebase config if not setting in configuration
+        //Database not run in anything syntax,to connect firebase with website 
+        //you should run syntax importing in anything program 
 
         const db = getDatabase();
 
         //References//
-        var namebox = document.getElementById("Namebox");
+        var name = document.getElementById("Name");
         var age = document.getElementById("Age");
-        var secbox = document.getElementById("Secbox");
-        var genbox = document.getElementById("Genbox");
+        var sec = document.getElementById("Sec");
+        var gen= document.getElementById("Gen");
 
         var insbtn = document.getElementById("Insbtn");
         var selBtn = document.getElementById("Selbtn");
@@ -97,11 +100,11 @@
 
         //Insert Data Function//
         function InsertData(){
-            set(ref(db, "TheStudents/"+ Age.value),{
-                NameOfStd : namebox.value,
+            set(ref(db, "TheStudents/"+ Name.value),{
+                NameOfStd : name.value,
                 Age : Age.value,
-                Section : secbox.value,
-                Gender: genbox.value
+                Section : sec.value,
+                Gender: gen.value
             })
             .then(()=>{
                 alert("data stored successfully");
@@ -116,11 +119,11 @@
          function SelectData() {
             const dbref = ref(db);
 
-            get(child(dbref,"TheStudents/"+ Age.value)).then((snapshot)=>{
+            get(child(dbref,"TheStudents/"+ Name.value)).then((snapshot)=>{
                 if(snapshot.exists()){
-                    Namebox.value = snapshot.val().NameOfStd;
-                    Secbox.value = snapshot.val().Section;
-                    Genbox.value = snapshot.val().Gender;
+                    Age.value = snapshot.val().Age;
+                    Sec.value = snapshot.val().Section;
+                    Gen.value = snapshot.val().Gender;
                 }
 
                 else{
@@ -137,9 +140,9 @@
          // Update Data Function//
          function UpdateData(){
             update(ref(db, "TheStudents/"+ Age.value),{
-                NameOfStd : namebox.value,
-                Section : secbox.value,
-                Gender: genbox.value
+                NameOfStd : name.value,
+                Section : sec.value,
+                Gender: gen.value
             })
             .then(()=>{
                 alert("data updated successfully");
@@ -176,4 +179,4 @@
       <script type="text/javascript" src="../js/iop.js"></script>
       <script type="text/javascript" src="../js/lrt.js"></script>
 </body>
-</html>
+</html> 

@@ -15,7 +15,7 @@
         <div class="menu">
             <div class="opener" id="myBtn"><span></span><span></span><span></span></div>
         </div>
-    <label class="name">Name</label> <input id="Namebox" type="text">
+    <label class="name">Name</label><input id="Namebox" type="text">
     <label class="Age">Age</label> <input id="Age" type="text">
     <label class="Section">Section</label> <input id="Secbox" type="text">
     <label class="Gender">Gender</label> <input id="Genbox" type="text">
@@ -60,25 +60,25 @@
             </div>
         </div>
 
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-          apiKey: "AIzaSyCJn-UTp3KXDmcvsalROVjrQ4El9yCJeY0",
-          authDomain: "db-22-24.firebaseapp.com",
-          projectId: "db-22-24",
-          storageBucket: "db-22-24.appspot.com",
-          messagingSenderId: "832883594255",
-          appId: "1:832883594255:web:0cc38b2bbb59c378583f7a"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+              apiKey: "AIzaSyDy8qGPdHT3llXpqegp0FO0a1WnX9yLPVg",
+              authDomain: "admin-22-24.firebaseapp.com",
+              projectId: "admin-22-24",
+              storageBucket: "admin-22-24.appspot.com",
+              messagingSenderId: "752918007803",
+              appId: "1:752918007803:web:bf0997890ca0300a58c55e"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+          
         import {getDatabase, ref, get, set, child, update, remove}
         from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
 
@@ -97,7 +97,7 @@
 
         //Insert Data Function//
         function InsertData(){
-            set(ref(db, "TheStudents/"+ Age.value),{
+            set(ref(db, "adm23/"+ Age.value),{
                 NameOfStd : namebox.value,
                 Age : Age.value,
                 Section : secbox.value,
@@ -116,7 +116,7 @@
          function SelectData() {
             const dbref = ref(db);
 
-            get(child(dbref,"TheStudents/"+ Age.value)).then((snapshot)=>{
+            get(child(dbref,"adm23/"+ Age.value)).then((snapshot)=>{
                 if(snapshot.exists()){
                     Namebox.value = snapshot.val().NameOfStd;
                     Secbox.value = snapshot.val().Section;
@@ -136,7 +136,7 @@
 
          // Update Data Function//
          function UpdateData(){
-            update(ref(db, "TheStudents/"+ Age.value),{
+            update(ref(db, "adm23/"+ Age.value),{
                 NameOfStd : namebox.value,
                 Section : secbox.value,
                 Gender: genbox.value
@@ -150,7 +150,7 @@
          }
          // Delete Data Function//
          function DeleteData(){
-            remove(ref(db, "TheStudents/"+ Age.value))
+            remove(ref(db, "adm23/"+ Age.value))
             .then(()=>{
                 alert("data removed successfully");
             })
