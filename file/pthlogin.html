@@ -24,10 +24,8 @@
         <input type="text" placeholder="Your Name" id="name">
         <label class="name" for="email"><b>Email</b></label>
         <input type="text" placeholder="Your Email" id="email"><br>
-        <div class="actions">
-            <form action="../file/pthlogin.html" class="Subscribe-btn">
-                <button type="submit" onClick="lrt()" id="submitBtn">Subscribe</button>
-            </form>
+        <div class="actions" >
+            <button type="submit" onClick="InsertData()" id="Insbtn">Subscribe</button>
         </div>
         <div class="desc">just subscribe and welcome to the ALNPRA book,already Subscribed and let's read(<a href="../index.html">homepage</a>)</div>
     </div>
@@ -62,11 +60,63 @@
                 </h3>
             </div>
         </div>
+
+        <script type="module">
+                    // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+                apiKey: "AIzaSyBXd5QZWxWroDnWEcPuM8IVl0aXob0a7_8",
+                authDomain: "db-01-23.firebaseapp.com",
+                projectId: "db-01-23",
+                storageBucket: "db-01-23.appspot.com",
+                messagingSenderId: "56883491599",
+                appId: "1:56883491599:web:a2b60a228de411e8e2847a"
+            };
+
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            import {getDatabase, ref, get, set, child, update, remove}
+            from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+
+            //Database should always to setting in firebase config if not setting in configuration
+            //Database not run in anything syntax,to connect firebase with website 
+            //you should run syntax importing in anything program 
+    
+            const db = getDatabase();
+
+            //References//
+            var name = document.getElementById("name");
+            var email = document.getElementById("email");
+
+            var Insbtn = document.getElementById("Insbtn");
+
+
+            //Insert Data Function //
+            function InsertData(){
+                set(ref(db, "TheStudents/"+name.value),{
+                    NameOfUser : name.value,
+                    Email : email.value
+                })
+                .then(()=>{
+                    alert("data stored successfully");
+                })
+                .catch((error)=>{
+                    alert("Unsuccessful, error"+error);
+                });
+            }
+
+            //Assign Events To Btns//
+            Insbtn.addEventListener('click', InsertData);
+            </script>
+
         <!--Javascript-->
-        <script src="../js/hdurl.js"></script>
+        <script type="text/javascript" src="../js/hdurl.js"></script>
         <script type="text/javascript" src="../js/iop.js"></script>
         <script type="text/javascript" src="../js/lrt.js"></script>
-        <script type="text/javascript" src="../js/login.js"></script>
 </body>
 
 </html>

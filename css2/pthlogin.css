@@ -121,7 +121,7 @@ body {
     transform: scaleY(1.2);
     cursor: text;
 }
-.card .actions .Subscribe-btn button {
+.card .actions  button {
     font-family: 'Poppins','Sans-Serif';
     cursor: pointer;
     color: #f9f9f9;
@@ -137,13 +137,13 @@ body {
     transition: background-color 100ms ease-in-out, transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
-.card .actions .Subscribe-btn button:hover {
+.card .actions  button:hover {
     background-color: #34d4bf;
     transform: scaleY(1.1);
     cursor: pointer;
 }
 
-.card .actions .Subscribe-btn button:active {
+.card .actions  button:active {
     cursor: pointer;
     background-color: #41dbc7;
     transform: scale(1);
