@@ -15,10 +15,10 @@
         <div class="menu">
             <div class="opener" id="myBtn"><span></span><span></span><span></span></div>
         </div>
+        <label class="ctr">Admin Database</label>   
     <label class="name">Name</label> <input id="Name" type="text">
-    <label class="Age">Age</label> <input id="Age" type="text">
-    <label class="Section">Section</label> <input id="Sec" type="text">
-    <label class="Gender">Gender</label> <input id="Gen" type="text">
+    <label class="email">Email</label> <input id="Email" type="text">
+
 
     <div class="actions01">
     <button type="submit" onClick="InsertData()" id="Insbtn">INSERT</button>
@@ -89,9 +89,7 @@
 
         //References//
         var name = document.getElementById("Name");
-        var age = document.getElementById("Age");
-        var sec = document.getElementById("Sec");
-        var gen= document.getElementById("Gen");
+        var age = document.getElementById("Email");
 
         var insbtn = document.getElementById("Insbtn");
         var selBtn = document.getElementById("Selbtn");
@@ -102,9 +100,8 @@
         function InsertData(){
             set(ref(db, "TheStudents/"+ Name.value),{
                 NameOfStd : name.value,
-                Age : Age.value,
-                Section : sec.value,
-                Gender: gen.value
+                Email : Email.value,
+
             })
             .then(()=>{
                 alert("data stored successfully");
@@ -121,9 +118,8 @@
 
             get(child(dbref,"TheStudents/"+ Name.value)).then((snapshot)=>{
                 if(snapshot.exists()){
-                    Age.value = snapshot.val().Age;
-                    Sec.value = snapshot.val().Section;
-                    Gen.value = snapshot.val().Gender;
+                    Email.value = snapshot.val().Email;
+
                 }
 
                 else{
@@ -139,10 +135,9 @@
 
          // Update Data Function//
          function UpdateData(){
-            update(ref(db, "TheStudents/"+ Age.value),{
-                NameOfStd : name.value,
-                Section : sec.value,
-                Gender: gen.value
+            update(ref(db, "TheStudents/"+ Name.value),{
+                Email : Email.value,
+
             })
             .then(()=>{
                 alert("data updated successfully");
@@ -153,7 +148,7 @@
          }
          // Delete Data Function//
          function DeleteData(){
-            remove(ref(db, "TheStudents/"+ Age.value))
+            remove(ref(db, "TheStudents/"+ Name.value))
             .then(()=>{
                 alert("data removed successfully");
             })

@@ -100,6 +100,13 @@ body {
 .ltlogin .menu .opener span:nth-child(3) {
     top: 1.65rem;
 }
+.ltlogin label.ctr {
+    text-align: center ;
+    padding : 0 1rem 0.5rem;
+    margin : 0 ;
+    font-family : 'Poppins','Sans-Serif';
+    color : #f9f9f9;        
+}
 
 .ltlogin label.name {
     text-align: left;
@@ -108,23 +115,9 @@ body {
     font-family: 'Poppins','Sans-Serif';
     color: #f9f9f9;
 }
-.ltlogin label.Age {
+.ltlogin label.email {
     text-align: left;
     padding: 0 1rem 0.5rem;
-    margin: 0;
-    font-family: 'Poppins','Sans-Serif';
-    color: #f9f9f9;
-}
-.ltlogin label.Section {
-    text-align: left;
-    padding: 0 1rem 0.5rem;
-    margin: 0;
-    font-family: 'Poppins','Sans-Serif';
-    color: #f9f9f9;
-}
-.ltlogin label.Gender{
-    text-align: left;
-    padding: 0 0.5rem 0rem;
     margin: 0;
     font-family: 'Poppins','Sans-Serif';
     color: #f9f9f9;
@@ -145,8 +138,8 @@ body {
     font-family: 'Poppins','Sans-Serif';
     cursor: pointer;
     color: #f9f9f9;
-    font: inherit;
     font-weight: bold;
+    font: inherit;
     background-color: #07ffdf;
     width: 100%;
     border: none;
