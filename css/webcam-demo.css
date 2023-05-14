@@ -1,5 +1,5 @@
 #webcam-app {
-  background-image: url(../images//background.jpg);
+  background-image: url(../img/new-bg-isuzu.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,8 +93,8 @@
     left: 0;
     width: 26px;
     height: 26px;
-    background-color: #fff;
-    border: 1px solid grey;
+    background-color: #00ffff;
+    border: 1px solid #e6e6e6;
     border-radius: 15px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
     transform: translate3d(2px, 2px, 0);
@@ -110,7 +110,7 @@
   
   .form-switch input { display: none; }
   
-  .form-switch input:checked + i { background-color: #4BD763; }
+  .form-switch input:checked + i { background-color: #00ffff; }
   
   .form-switch input:checked + i::before { transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0); }
   
@@ -235,7 +235,7 @@
     background-color: black;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(../images//camera_flip_white.png);
+    background-image: url(../img/camera_flip_white.png);
     background-size: cover;
 }
 
