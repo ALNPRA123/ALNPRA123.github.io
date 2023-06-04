@@ -9,5 +9,6 @@
         "origin",
         "upstream",
         "master"
-    ]
+    ],
+    "svn.ignoreMissingSvnWarning": true
 }
