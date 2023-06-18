@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+.heading{
+    text-align: center;
+    color: #ff0000;
+    }
+    video  {
+      width: 192px;
+      height: 192px;
+      background: rgba(0,0,0,0.2);
+      -webkit-transform: scaleX(-1); /* mirror effect while using front cam */
+      transform: scaleX(-1);         /* mirror effect while using front cam */
+    }
+    
+    #canvas  {
+      width: 192px;
+      height: 192px;
+      -webkit-transform: scaleX(-1); /* mirror effect while using front cam */
+      transform: scaleX(-1);         /* mirror effect while using front cam */
+    }
