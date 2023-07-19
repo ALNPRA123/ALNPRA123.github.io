@@ -1,7 +1,10 @@
-.heading{
+h1{
     text-align: center;
     color: #ff0000;
     }
+  h2{
+      text-align: center;
+}
     video  {
       width: 192px;
       height: 192px;
@@ -10,12 +13,13 @@
       -webkit-transform: scaleX(-1); /* mirror effect while using front cam */
       transform: scaleX(-1);         /* mirror effect while using front cam */
     }
-    
     #canvas  {
       width: 192px;
       height: 192px;
       -webkit-transform: scaleX(-1); /* mirror effect while using front cam */
       transform: scaleX(-1);         /* mirror effect while using front cam */
+      outline: #30c196 solid 5px;
+      border-radius: 15px 20px;
     }
     .titlecam00 {
       font-size: 35px;
@@ -23,4 +27,10 @@
       font-style: bold;
       text-align: center;
       width: 100%;
+    }
+    p{
+      text-align: center;
+      font-weight: bold;
+      font-size: 22px;
+      font-family: 'Times New Roman', Times, serif;
     }

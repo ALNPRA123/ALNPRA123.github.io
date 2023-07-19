@@ -35,16 +35,19 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
 		</div>
 	  </div>
 	<form id ="form-print">
-		<h2 class="heading">
+		<h1 class="heading">
 			ISUZU
-			</h2>
-		<div class="mt-3">
-			<b>Output:</b>
-			<br>
+			</h1>
+		<h2>
+			Pt.Mesin Isuzu Indonesia
+		</h2>
+		<p>Incident Photo:</p>
+		<div class="mt-3" align="center">
 			<canvas id="canvas" class="bg-light shadow border border-5 border-success">
 			</canvas>
 			<audio id="snapSound" src="../songsystem/snap.wav" preload = "auto"></audio>
 		  </div>
+		  <br>
 		<label for="name">
 		<strong>Name: </strong>
 		</label>
@@ -83,11 +86,11 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
 		id="message" name="message"
 		placeholder="Enter you message"
 		style="height:100px">
-		</textarea>
-		<br>
-		<input type="button" class="btn btn-primary"
-		onclick="GeneratePdf();" value="GeneratePdf">  
+		</textarea>  
 	</form>
+	<br><br>
+	<input type="button" class="btn btn-primary"
+	onclick="GeneratePdf();" value="GeneratePdf">
  
 	</div> 
 	<script src="../js/dist/pagerecord.js"></script>
