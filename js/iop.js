@@ -8,7 +8,7 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
+btn.onclick = function() {z
   popupcontact.style.display = "block";
 };
 
