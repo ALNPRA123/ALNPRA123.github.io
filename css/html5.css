@@ -87,6 +87,7 @@ body{
  @media(max-width: 990px){
     .card-10.card-11.card-12.title{
     margin: 20px;
+    display: ruby-base;
     }
  }
  /*End Code*/

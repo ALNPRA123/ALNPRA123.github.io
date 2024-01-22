@@ -447,8 +447,8 @@ html {
   }
 
   .content {
-    -webkit-transform: translateY(calc(100% - 4.5rem));
-            transform: translateY(calc(100% - 4.5rem));
+    -webkit-transform: translateY(calc(100% - 5rem));
+            transform: translateY(calc(100% - 5rem));
   }
   .content > *:not(.title) {
     opacity: 0;

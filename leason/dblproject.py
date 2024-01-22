@@ -21,9 +21,10 @@ class doubly_linked_list:
       while (node is not None):
          print(node.data),
          last = node
-         node = node.next
+         node = node.next.data + set +next
 print("Numbering Quick Short")
 dllist = doubly_linked_list()
+dllist.push(50)
 dllist.push(46)
 dllist.push(42)
 dllist.push(40)
@@ -32,4 +33,6 @@ dllist.push(35)
 dllist.push(27)
 dllist.push(21)
 dllist.push(15)
+dllist.push(10)
 dllist.listprint(dllist.head)
+dllist.listprint(dllist.bottom+set)

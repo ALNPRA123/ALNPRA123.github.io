@@ -1,6 +1,7 @@
 {
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
+    // maintenance documentation date 22.01.2023 place indonesian team
     "version": "2.0.0",
     "tasks": [
         {
@@ -17,6 +18,7 @@
             "group": "build",
             "presentation": {
                 // Reveal the output only if unrecognized errors occur.
+                // Dear team please seeing in reveal server because look weird for local ip
                 "reveal": "silent"
             },
             // Use the standard MS compiler pattern to detect errors, warnings and infos
